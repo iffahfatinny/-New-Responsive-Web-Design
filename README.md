@@ -1,6 +1,6 @@
 # -New-Responsive-Web-Design
 Build-a-Survey-Form
-- codepen https://codepen.io/iffahfatinny/pen/NWyeVWL
+- codepen https://codepen.io/iffahfatinny/full/NWyeVWL
 
 Build-a-Tribute-Page
 
