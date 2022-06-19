@@ -1,0 +1,48 @@
+body{
+    box-sizing: border-box;
+    font-family: Arial;
+    height: 100vh;
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    line-height: 1.5;
+  }
+  
+  #main-doc{
+    position: relative;
+    flex: 60%;
+    padding-left: 20px;
+    border-left: 1px solid;
+  }
+  
+  header{
+    font-weight: bold;
+    font-size: 24px;
+  }
+  
+  #navbar{
+    flex: 30%;
+  }
+  
+  #navbar ul{
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .nav-link{
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    margin: 0;
+    padding: 10px 0;
+    text-align: center;
+    border-top: 1px solid;
+  }
+  
+  @media screen and (min-width: 800px){
+    body{
+      flex-direction: row;
+    }
+  }
+  
+  
