@@ -2,26 +2,35 @@ body{
     box-sizing: border-box;
     font-family: Arial;
     height: 100vh;
+    width: 100%;
     font-size: 14px;
-    display: flex;
-    flex-direction: column;
     line-height: 1.5;
+    margin: 0;
+    display: block;
   }
   
   #main-doc{
     position: relative;
-    flex: 60%;
-    padding-left: 20px;
-    border-left: 1px solid;
+    padding: 30px 20px 0 20px;
+    margin-left: 250px;
   }
   
   header{
     font-weight: bold;
     font-size: 24px;
+    margin: 20px 0;
   }
   
   #navbar{
-    flex: 30%;
+    position:fixed;
+    overflow: auto;
+    height: 100%;
+    width: 250px;
+    border-right: 1px solid;
+  }
+  
+  #navbar header{
+    text-align: center;
   }
   
   #navbar ul{
@@ -29,20 +38,49 @@ body{
     padding: 0;
   }
   
+  code{
+    display: block;
+    background-color: lightgrey;
+    padding: 20px;
+    text-align: left;
+    width: 80%;
+    border: 1px dotted grey;
+    border-radius: 5px;
+  }
+  
   .nav-link{
-    display: flex;
-    flex-direction: column;
+    display: block;
     text-decoration: none;
     margin: 0;
     padding: 10px 0;
     text-align: center;
-    border-top: 1px solid;
+    border-bottom: 1px solid;
+    color: black;
   }
   
-  @media screen and (min-width: 800px){
+  #navbar a:hover{
+    background-color: lightgrey;
+  }
+  
+  @media screen and (max-width: 900px){
+  
     body{
-      flex-direction: row;
+      height: 100vh;
+      width: auto;
+      margin: 0;
+      padding: 0;
     }
+  
+    #main-doc{
+      padding: 30px;
+      margin: 0;
+    }
+  
+    #navbar{
+      position: relative;
+      width: auto;
+      max-height: 30%;
+      overflow: auto;
+    }
+    
   }
-  
-  
